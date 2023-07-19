@@ -16,6 +16,7 @@ lazy val commonSettings = Seq(
   scalacOptions ++= Seq("-deprecation","-unchecked"),
   libraryDependencies ++= Seq("org.scala-lang" % "scala-reflect" % scalaVersion.value),
   libraryDependencies ++= Seq("org.json4s" %% "json4s-native" % "4.0.6"),
+  libraryDependencies ++= Seq("org.agrona" % "agrona" % "[1.19.0,)"),
   libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "3.2.0" % "test"),
   resolvers ++= Seq(
     Resolver.sonatypeRepo("snapshots"),
